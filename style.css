@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root{
+   /* primary */
+   /* button + social */
+    --blue:hsl(223, 87%, 63%);
+    /* seconadry */
+    /* button hover */
+    --PaleBlue: hsl(223, 100%, 88%);
+    /* error */
+    --LightRed: hsl(354, 100%, 66%);
+    /* Neutral */
+    /* input */
+    --Gray: hsl(0, 0%, 59%);
+    /* h1 */
+    --VeryDarkBlue: hsl(209, 33%, 12%);
+    /* typo */
+     --FontSize: 20px;
+     --small:300;
+     --medium:600;
+     --large:700;
+     --fontFamily:'Libre Franklin', sans-serif;
+   
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--fontFamily);
+
+}
+/* mobile first */
+.container{
+    min-width: 100vw;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imageContainer{
+    text-align: center;
+}
+.illustration{
+    width: 90%;
+    margin-bottom: 5rem;
+}
+.logo-container{
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+.soon{
+  text-align: center;
+  margin-bottom: 2rem;
+  
+ 
+}
+h1{
+    margin-bottom: 0.6rem;
+    padding: 0.5rem;
+}
+input{
+    opacity: 50%;
+   
+}
+.gray{
+    color: var(--Gray);
+    font-weight: var(--small);
+}
+.gray span{
+    color:var(--VeryDarkBlue);
+    font-weight: var(--large);
+   
+}
+.subscribe{
+    color: var(--VeryDarkBlue);
+    font-weight: var(--small);
+}
+.emailContainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    
+    
+}
+
+#email{
+    margin-bottom: 0.6rem;
+    border: 1px solid hsl(223, 100%, 88%);
+    
+    
+}
+
+.submit , #email{
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 3rem;
+    border: 1px solid hsl(0, 0%, 59%);
+    cursor:pointer;
+}
+.submit{
+    background-color: var(--blue);
+    color:#fff;
+    font-weight: var(--medium);
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.submit:hover{
+    background-color: var(--PaleBlue);
+    color: var(--VeryDarkBlues);
+}
+
+.socialContainer{
+    margin-bottom: 3rem;
+}
+.success{
+   border: green;
+    margin-left: 0.3rem;
+}
+.errorMessage{
+    color: red;
+    font-size: 10px;
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-left: 2rem;
+
+}
+.error{
+    display: none;
+    color: red;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 0.4rem;
+    font-style: italic;
+    text-align: center;
+
+}
+
+i{
+    color: var(--blue);
+    border-radius: 50%;
+    padding: 0.5rem;
+    border:1px solid rgb(231, 221, 221);
+    margin:0.5rem;
+    font-style: normal;
+    font-size:1rem;
+    cursor: pointer;
+    
+}
+.copy{
+    opacity: 50%;
+    font-size: 12px;
+}
+i:hover{
+    color: white;
+    background-color: var(--blue);
+}
+.attribution{
+    margin: 1rem;
+}
+
+    @media only screen and (min-width:769px){
+        .emailContainer{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            bottom:2rem ;
+        }
+        .illustration{
+            width: 60%;
+            position: relative;
+            bottom:1rem ;
+        }
+        .submit{
+            width: 10rem;
+            padding: 1rem;
+            margin-left: 0.5rem;
+            background-color: var(--blue);
+            color: #fff;
+            position: relative;
+            /* change with js */
+            bottom: 0.3rem;
+        }
+        .submitWithError{
+            position: relative;
+           bottom: 1.4rem;
+        }
+        #email{
+            width: 30rem;
+        }
+        .emailErrorShow{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+     
+
+        }
+        .error{
+            font-size: 15px;
+            display: none;
+            text-align: start;
+            margin-left: 2rem;
+        }
+        .soon{
+            position: relative;
+            bottom:2rem ;
+        }
+       
+            
+
+    }
